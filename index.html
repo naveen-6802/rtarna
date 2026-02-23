@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rit Rin Tech Wizard | Digital Marketing Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Outfit', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+        }
+
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glow-accent {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, rgba(139, 92, 246, 0) 70%);
+            z-index: -1;
+            filter: blur(40px);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(139, 92, 246, 0.5);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #a78bfa 0%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Smooth Scrolling */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+
+    <!-- Background Accents -->
+    <div class="glow-accent top-0 left-0"></div>
+    <div class="glow-accent bottom-0 right-0"></div>
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <!-- LOGO PLACEHOLDER -->
+                <div class="w-12 h-12 flex items-center justify-center">
+                    <img src="" alt="LOGO" id="logo-preview" class="max-w-full max-h-full object-contain">
+                    <!-- Text fallback if no logo -->
+                    <span class="text-xl font-bold tracking-tight">RRTW<span class="text-violet-500">.</span></span>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#home" class="hover:text-violet-400 transition-colors">Home</a>
+                <a href="#services" class="hover:text-violet-400 transition-colors">Services</a>
+                <a href="#testimonials" class="hover:text-violet-400 transition-colors">Results</a>
+                <a href="#contact" class="hover:text-violet-400 transition-colors">Hire Us</a>
+            </div>
+
+            <a href="https://wa.me/918233676669" target="_blank" class="bg-violet-600 hover:bg-violet-700 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition-all shadow-lg shadow-violet-500/20">
+                Let's Talk
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="pt-40 pb-20 px-6 overflow-hidden">
+        <div class="max-w-7xl mx-auto text-center relative">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 text-sm font-medium border-violet-500/30">
+                <i data-lucide="sparkles" class="w-4 h-4 text-violet-400"></i>
+                <span>Top Rated Freelancer with 225+ Five-Star Reviews</span>
+            </div>
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tight">
+                Turning Clicks into <span class="gradient-text">Clients</span> & <br>Brands into Empires.
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 leading-relaxed">
+                At Rit Rin Tech Wizard, we craft digital strategies that stick. We don't just chase trends — we fuel your funnel with high-ROI magic.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#services" class="px-8 py-4 bg-violet-600 rounded-2xl font-bold hover:bg-violet-700 transition-all flex items-center justify-center gap-2">
+                    Our Services <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                </a>
+                <a href="#testimonials" class="px-8 py-4 glass rounded-2xl font-bold hover:bg-white/5 transition-all">
+                    View Case Studies
+                </a>
+            </div>
+
+            <!-- Floating Elements Background -->
+            <div class="absolute -top-20 -left-20 animate-float opacity-20 pointer-events-none">
+                <i data-lucide="cpu" class="w-32 h-32 text-violet-500"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Bar -->
+    <div class="max-w-5xl mx-auto px-6 mb-24">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 glass p-8">
+            <div class="text-center">
+                <div class="text-3xl font-bold gradient-text">100%</div>
+                <div class="text-xs text-slate-500 uppercase tracking-widest mt-1">On Time</div>
+            </div>
+            <div class="text-center border-l border-white/10">
+                <div class="text-3xl font-bold gradient-text">225+</div>
+                <div class="text-xs text-slate-500 uppercase tracking-widest mt-1">5-Star Reviews</div>
+            </div>
+            <div class="text-center border-l border-white/10">
+                <div class="text-3xl font-bold gradient-text">100%</div>
+                <div class="text-xs text-slate-500 uppercase tracking-widest mt-1">On Budget</div>
+            </div>
+            <div class="text-center border-l border-white/10">
+                <div class="text-3xl font-bold gradient-text">5.0</div>
+                <div class="text-xs text-slate-500 uppercase tracking-widest mt-1">Perfect Score</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Wizard-Level <span class="gradient-text">Solutions</span></h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Comprehensive digital services designed to scale your business across every platform.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Service 1 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-violet-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="monitor" class="text-violet-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Website Development</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Clean, responsive, and conversion-optimized websites that turn visitors into loyal customers.</p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-blue-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="trending-up" class="text-blue-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Organic SEO</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Sustainable organic growth that sticks. We help you dominate the search rankings for the long term.</p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-red-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="target" class="text-red-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">ROI-Driven SEM</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Data-backed Google Ads & ad campaigns designed for maximum Return on Investment.</p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-pink-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="share-2" class="text-pink-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Social Media Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Strategic growth and content management across Instagram, Facebook, LinkedIn, and X.</p>
+                </div>
+
+                <!-- Service 5 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-emerald-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="award" class="text-emerald-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Brand Promotion</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Build trust and stand out in a crowded market. We elevate your brand identity with confidence.</p>
+                </div>
+
+                <!-- Service 6 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-indigo-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="text-indigo-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Influencer Marketing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Expand your reach through trusted voices and niche-relevant affiliate partnerships.</p>
+                </div>
+
+                <!-- Service 7 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-red-600/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="play" class="text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">YouTube Marketing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Grow your views, subscribers, and engagement with specialized channel optimization.</p>
+                </div>
+
+                <!-- Service 8 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-yellow-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="shopping-bag" class="text-yellow-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Marketplace Promotion</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Expert visibility for Amazon, Etsy, and eBay stores that drives direct sales growth.</p>
+                </div>
+
+                <!-- Service 9 -->
+                <div class="service-card glass p-8 transition-all">
+                    <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="palette" class="text-cyan-400"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Graphic Designing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Eye-catching, premium visuals tailored to your unique brand voice and aesthetics.</p>
+                </div>
+
+                <!-- Service 10 -->
+                <div class="service-card glass p-8 lg:col-span-3 transition-all">
+                    <div class="flex flex-col md:flex-row items-center gap-8">
+                        <div class="w-16 h-16 bg-orange-500/10 rounded-2xl flex items-center justify-center shrink-0">
+                            <i data-lucide="zap" class="text-orange-400 w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Sales & Leads Generation</h3>
+                            <p class="text-slate-400">From initial awareness to final action — we fuel every stage of your sales funnel to ensure consistent growth and high conversion rates.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-2">Wall of <span class="gradient-text">Success</span></h2>
+                    <p class="text-slate-400">Don't take our word for it. Here is what our global clients say.</p>
+                </div>
+                <div class="hidden md:flex gap-1 text-yellow-400">
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                </div>
+            </div>
+
+            <!-- REVIEW PLACEHOLDERS -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Review 1 -->
+                <div class="glass overflow-hidden group">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center">
+                        <img src="" alt="Review Screenshot 1" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center text-slate-500 group-hover:text-slate-300 transition-colors">
+                            <p class="text-xs italic uppercase tracking-widest">[ Add Review Image 1 ]</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-violet-600/20 flex items-center justify-center text-violet-400 font-bold">AK</div>
+                            <div>
+                                <h4 class="font-bold text-sm">Arushi K.</h4>
+                                <p class="text-xs text-slate-500">Website Development</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm">"Excellent Developer! Went above and beyond. Knowledgeable and personable."</p>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass overflow-hidden group">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center">
+                        <img src="" alt="Review Screenshot 2" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center text-slate-500 group-hover:text-slate-300 transition-colors">
+                            <p class="text-xs italic uppercase tracking-widest">[ Add Review Image 2 ]</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-blue-600/20 flex items-center justify-center text-blue-400 font-bold">LS</div>
+                            <div>
+                                <h4 class="font-bold text-sm">Lachlan S.</h4>
+                                <p class="text-xs text-slate-500">SEO & Marketing</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm">"My sales have definitely increased since working with him. Very hard worker."</p>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass overflow-hidden group">
+                    <div class="aspect-video bg-slate-800 relative flex items-center justify-center">
+                        <img src="" alt="Review Screenshot 3" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 flex items-center justify-center text-slate-500 group-hover:text-slate-300 transition-colors">
+                            <p class="text-xs italic uppercase tracking-widest">[ Add Review Image 3 ]</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="w-10 h-10 rounded-full bg-emerald-600/20 flex items-center justify-center text-emerald-400 font-bold">GC</div>
+                            <div>
+                                <h4 class="font-bold text-sm">Garrie C.</h4>
+                                <p class="text-xs text-slate-500">Content Creation</p>
+                            </div>
+                        </div>
+                        <p class="text-slate-400 text-sm">"This guy is one of the best you will be able to get. Great schedule and results."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact -->
+    <footer id="contact" class="py-20 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
+                <div>
+                    <h2 class="text-4xl font-bold mb-6">Let's Craft Your <span class="gradient-text">Success</span></h2>
+                    <p class="text-slate-400 text-lg mb-8">Ready to dominate the digital landscape? Rit Rin Tech Wizard is ready to help you grow with class and clarity.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 glass flex items-center justify-center rounded-xl">
+                                <i data-lucide="phone" class="text-violet-400 w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase tracking-widest">Call or WhatsApp</p>
+                                <a href="tel:+918233676669" class="text-lg font-semibold">+91-8233676669</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="flex gap-4 mt-10">
+                        <a href="https://www.instagram.com/ritrintechwizard/" target="_blank" class="w-12 h-12 glass flex items-center justify-center rounded-xl hover:bg-pink-600/20 hover:border-pink-500/50 transition-all">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.facebook.com/p/RitRin-Tech-Wizard-61570111196018/" target="_blank" class="w-12 h-12 glass flex items-center justify-center rounded-xl hover:bg-blue-600/20 hover:border-blue-500/50 transition-all">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/106634676/" target="_blank" class="w-12 h-12 glass flex items-center justify-center rounded-xl hover:bg-blue-700/20 hover:border-blue-600/50 transition-all">
+                            <i data-lucide="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="glass p-8">
+                    <h3 class="text-2xl font-bold mb-6">Quick Connect</h3>
+                    <form class="space-y-4">
+                        <input type="text" placeholder="Your Name" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all">
+                        <input type="email" placeholder="Email Address" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all">
+                        <textarea placeholder="Tell us about your project" rows="4" class="w-full bg-white/5 border border-white/10 rounded-xl px-6 py-4 focus:outline-none focus:border-violet-500 transition-all"></textarea>
+                        <button class="w-full py-4 bg-violet-600 rounded-xl font-bold hover:bg-violet-700 transition-all">Send Message</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="pt-8 border-t border-white/5 text-center text-slate-500 text-sm">
+                <p>&copy; 2024 Rit Rin Tech Wizard. All rights reserved. Crafting Digital ROI.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/918233676669" target="_blank" class="fixed bottom-8 right-8 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-2xl shadow-green-500/30 hover:scale-110 transition-transform z-50">
+        <svg viewBox="0 0 24 24" width="32" height="32" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.067 2.877 1.215 3.076.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.72.94 3.659 1.437 5.63 1.438h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    </a>
+
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+
+        // Logo Image Handler
+        const logoPreview = document.getElementById('logo-preview');
+        if (!logoPreview.src || logoPreview.src.includes('index.html')) {
+            logoPreview.style.display = 'none';
+        }
+
+        // Navigation Highlight on scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('nav a');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-violet-400');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('text-violet-400');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
